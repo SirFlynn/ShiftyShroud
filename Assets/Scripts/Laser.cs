@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Laser : MonoBehaviour
+public class TriggerCube : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    //When somthing enters the Trigger
+    void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.tag == "Player")
+        {
+            Debug.Log("Hello there");
+        }
     }
 }
