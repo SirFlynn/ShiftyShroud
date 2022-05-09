@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    //When somthing enters the Trigger
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
+    void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log("Hello there");
-
+            if (other.tag == "Player")
+            {
+                Debug.Log("Hello there");
+            }
         }
-    }
 }
