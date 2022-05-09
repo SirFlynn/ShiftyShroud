@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class SelectController : MonoBehaviour
 {
-    public GameObject otherPlayer;
-    public GameObject crate;
-
-    void Start()
-    {
-        crate.GetComponent<MouseController>().enabled = false;
-    }
+    public ControlManager manager;
 
     private void OnMouseDown()
     {
-        otherPlayer.GetComponent<MouseController>().enabled = false;
+        manager.ChangePlayer(this.gameObject);
         GetComponent<MouseController>().enabled = true;
     }
 }
