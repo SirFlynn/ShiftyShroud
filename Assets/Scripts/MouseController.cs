@@ -11,7 +11,6 @@ public class MouseController : MonoBehaviour
     public LayerMask whatStopsMovement;
     public LayerMask whatAllowsMovement;
 
-    // Start is called before the first frame update
     void Start()
     {
         movePoint.parent = null;
