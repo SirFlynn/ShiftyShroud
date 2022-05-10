@@ -7,6 +7,10 @@ public class MouseController : MonoBehaviour
     public float moveSpeed = 5f;
     public Transform movePoint;
     private bool moving = false;
+    public GameObject endWaypoint;
+    public GameObject player;
+
+    public float duration = 4.0f;
 
     public LayerMask whatStopsMovement;
     public LayerMask whatAllowsMovement;
@@ -16,6 +20,33 @@ public class MouseController : MonoBehaviour
     void Start()
     {
         movePoint.parent = null;
+    }
+
+    //Lerps the player to the cheese 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Cheese")
+        {
+            if (duration == 0)
+                duration = 1;
+
+            //goes from 0-durations value then repeats
+            float timer = Mathf.PingPong(Time.time, duration) / duration;
+
+            //change timer to ease the acceleration
+            timer = easeInOutSine(timer);
+
+            //Lerp position from start waypoint to end waypoint over time
+            Vector3 position = Vector3.Lerp(player.transform.position, endWaypoint.transform.position, timer);
+
+            transform.position = position;
+
+            //used to slow down the object and make it gain speed when moving
+            float easeInOutSine(float x)
+            {
+                return -(Mathf.Cos(Mathf.PI * x) - 1) / 2;
+            }
+        }
     }
 
     // Update is called once per frame
