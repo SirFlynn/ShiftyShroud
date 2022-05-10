@@ -11,6 +11,8 @@ public class MouseController : MonoBehaviour
     public LayerMask whatStopsMovement;
     public LayerMask whatAllowsMovement;
 
+    public GameManager gameManager;
+
     void Start()
     {
         movePoint.parent = null;
@@ -52,6 +54,7 @@ public class MouseController : MonoBehaviour
             if(gameObject.tag == "Player")
             {
                 //Send Mouse back to starting position
+                gameManager.LevelFailed();
             }
             else if (gameObject.tag == "MoveableCrate" && moving == true)
             {
