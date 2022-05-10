@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Camera
   - MoveableCrate
+  - Pause Menu
   layers:
   - Default
   - TransparentFX
