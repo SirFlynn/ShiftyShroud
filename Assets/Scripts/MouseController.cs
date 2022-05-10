@@ -11,6 +11,11 @@ public class MouseController : MonoBehaviour
     public LayerMask whatStopsMovement;
     public LayerMask whatAllowsMovement;
 
+    void Start()
+    {
+        movePoint.parent = null;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -26,14 +31,16 @@ public class MouseController : MonoBehaviour
                     movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                     moving = true;
                 }
-            } else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+            }
+            else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
                 if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, whatStopsMovement))
                 {
                     movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                     moving = true;
-                } 
-            } else
+                }
+            }
+            else
             {
                 moving = false;
             }
@@ -42,9 +49,9 @@ public class MouseController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Camera")
+        if (other.tag == "Camera")
         {
-            if(gameObject.tag == "Player")
+            if (gameObject.tag == "Player")
             {
                 //Send Mouse back to starting position
             }
