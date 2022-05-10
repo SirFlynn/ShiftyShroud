@@ -45,4 +45,19 @@ public class MouseController : MonoBehaviour
             }
         } 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Camera")
+        {
+            if(gameObject.tag == "Player")
+            {
+                //Send Mouse back to starting position
+            }
+            else if (gameObject.tag == "MoveableCrate" && moving == true)
+            {
+                //Send crate back to starting position
+            }
+        }
+    }
 }
