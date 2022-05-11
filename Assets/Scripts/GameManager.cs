@@ -20,7 +20,8 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Level Failed");
         levelFailedUI.SetActive(true);
-        GameIsPaused = true;
+        PauseMenu.GameIsPaused = true;
+        pauseMenu.Pause();
     }
 
 
