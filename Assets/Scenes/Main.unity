@@ -3629,7 +3629,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 212.83, y: 44.6}
+  m_SizeDelta: {x: 183.87, y: 40.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &774681131
 MonoBehaviour:
@@ -3678,8 +3678,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.4
-  m_fontSizeBase: 34.4
+  m_fontSize: 29.7
+  m_fontSizeBase: 29.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5998,7 +5998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8760000360952274821, guid: 7c68d16c577b3e640a3372bdaeb50719, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.931517
+      value: -11.931518
       objectReference: {fileID: 0}
     - target: {fileID: 8760000360952274821, guid: 7c68d16c577b3e640a3372bdaeb50719, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6725,6 +6725,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mouse_Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 1336485604213544745, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1722047881}
+    - target: {fileID: 1336485604213544745, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: endWaypoint
+      value: 
+      objectReference: {fileID: 868418952}
+    - target: {fileID: 1336485604213544745, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 2036555793}
     - target: {fileID: 1336485604280172322, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -7028,7 +7040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 373780943057607778, guid: eb573486493246344a32b710147eed33, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 373780943057607778, guid: eb573486493246344a32b710147eed33, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7559,8 +7571,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -431, y: 266}
-  m_SizeDelta: {x: 212.83, y: 44.6}
+  m_AnchoredPosition: {x: 447.5, y: 270}
+  m_SizeDelta: {x: 183.87, y: 40.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854683627
 MonoBehaviour:
