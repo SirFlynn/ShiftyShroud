@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 926879408}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LaserFirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 755043283}
   - component: {fileID: 755043284}
   - component: {fileID: 755043282}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Unpowered_Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}

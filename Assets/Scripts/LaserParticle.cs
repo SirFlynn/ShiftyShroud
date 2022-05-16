@@ -11,6 +11,9 @@ public class LaserParticle : MonoBehaviour
 
     public GameManager gameManager;
 
+    //will look for layer 10
+    private int layerMask = 1<<10;
+
     private void Awake()
     {
         m_transform = GetComponent<Transform>();
@@ -23,11 +26,13 @@ public class LaserParticle : MonoBehaviour
 
     void ShootLaser()
     {
-        if (Physics2D.Raycast(m_transform.position, -transform.up))
+        //Shoots a laser in a direction and stops if it hits a collider on the layer defined in layerMask. 
+        if (Physics2D.Raycast(m_transform.position, -transform.up, 10, layerMask))
         {
             RaycastHit2D hit = Physics2D.Raycast(m_transform.position, -transform.up);
             Draw2DRay(laserFirePoint.position, hit.point);
 
+            //checks if the object the raycast hits is the player and if it is triggers level fail.
             if (hit.transform.CompareTag("Player"))
             {
                 Debug.Log("you hit me");
