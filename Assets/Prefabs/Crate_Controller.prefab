@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 123296028607904082}
   m_Layer: 9
   m_Name: Square
-  m_TagString: Player
+  m_TagString: Crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 123296028886326851}
   m_Layer: 9
   m_Name: Crate_Move_Point
-  m_TagString: Player
+  m_TagString: Crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 123296029558280952}
   m_Layer: 9
   m_Name: Crate_Controller
-  m_TagString: Player
+  m_TagString: Crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,9 +161,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   movePoint: {fileID: 123296028886326851}
+  endWaypoint: {fileID: 0}
+  player: {fileID: 0}
+  duration: 4
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 512
+  whatAllowsMovement:
+    serializedVersion: 2
+    m_Bits: 0
+  gameManager: {fileID: 0}
 --- !u!61 &123296029558280953
 BoxCollider2D:
   m_ObjectHideFlags: 0

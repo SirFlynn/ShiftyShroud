@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7698888534902835019}
   - component: {fileID: 7698888534902835061}
   - component: {fileID: 7698888534902835018}
-  m_Layer: 9
+  - component: {fileID: 7400589826908842488}
+  m_Layer: 0
   m_Name: Cat_View_03
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -93,7 +94,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -108,11 +109,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.5}
-      - {x: -0.50119424, y: 0.5021652}
-      - {x: -0.49922016, y: -0.5048391}
-      - {x: 0.50622004, y: -0.5025058}
-      - {x: 0.23753488, y: 0.030845374}
+    - - {x: -0.012423006, y: 0.48757696}
+      - {x: -0.48255968, y: 0.48663652}
+      - {x: -0.4805857, y: -0.4489357}
+      - {x: 0.47205666, y: -0.45074677}
+      - {x: 0.2251119, y: 0.024633855}
+--- !u!114 &7400589826908842488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698888534902835016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e253e17a87a36734d9c166b7b39af9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  startPosition: {fileID: 0}
 --- !u!1 &7698888535335939469
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +139,8 @@ GameObject:
   - component: {fileID: 7698888535335939468}
   - component: {fileID: 7698888535335939470}
   - component: {fileID: 7698888535335939471}
-  m_Layer: 9
+  - component: {fileID: 797127199915236097}
+  m_Layer: 0
   m_Name: Cat_View_02
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -206,7 +222,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -221,11 +237,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.5}
-      - {x: -0.20254949, y: 0.113043204}
-      - {x: -0.5046737, y: -0.50126046}
-      - {x: 0.49924093, y: -0.50359356}
-      - {x: 0.50101626, y: 0.4977181}
+    - - {x: -0.009317279, y: 0.48757672}
+      - {x: -0.19944373, y: 0.100620165}
+      - {x: -0.47051036, y: -0.45777994}
+      - {x: 0.49302948, y: -0.45700705}
+      - {x: 0.49169892, y: 0.4884007}
+--- !u!114 &797127199915236097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698888535335939469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e253e17a87a36734d9c166b7b39af9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  startPosition: {fileID: 0}
 --- !u!1 &7698888535505635864
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +267,8 @@ GameObject:
   - component: {fileID: 7698888535505635867}
   - component: {fileID: 7698888535505635845}
   - component: {fileID: 7698888535505635866}
-  m_Layer: 9
+  - component: {fileID: 1571342024655171100}
+  m_Layer: 0
   m_Name: Cat_View_01
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -334,11 +365,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.001712054, y: 0.50684834}
-      - {x: -0.2358385, y: 0.04151191}
-      - {x: -0.4998735, y: -0.49439114}
-      - {x: 0.5043678, y: -0.49439085}
-      - {x: 0.22835118, y: 0.042155474}
+    - - {x: -0.001712054, y: 0.49131966}
+      - {x: -0.22341558, y: 0.04151191}
+      - {x: -0.481239, y: -0.49439114}
+      - {x: 0.4888391, y: -0.49439085}
+      - {x: 0.21592817, y: 0.042155474}
+--- !u!114 &1571342024655171100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698888535505635864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e253e17a87a36734d9c166b7b39af9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  startPosition: {fileID: 0}
 --- !u!1 &7698888536621270299
 GameObject:
   m_ObjectHideFlags: 0
