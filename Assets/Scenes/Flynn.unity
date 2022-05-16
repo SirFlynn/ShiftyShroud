@@ -948,7 +948,7 @@ Transform:
   - {fileID: 40414654}
   - {fileID: 2122198228}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1062497072
 GameObject:
@@ -1397,25 +1397,13 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 351907265}
-    - target: {fileID: 755043282, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
-      propertyPath: IgnoreMe.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 926879407, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1491321490815319722, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
       propertyPath: m_Name
       value: Unpowered_Laser
       objectReference: {fileID: 0}
-    - target: {fileID: 1491321490815319722, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1491321490815319723, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1491321490815319723, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
       propertyPath: m_LocalPosition.x
