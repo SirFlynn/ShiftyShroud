@@ -8,6 +8,7 @@ TagManager:
   - MoveableCrate
   - Pause Menu
   - Cheese
+  - Crate
   layers:
   - Default
   - TransparentFX
