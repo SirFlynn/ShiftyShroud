@@ -9,6 +9,8 @@ public class LaserParticle : MonoBehaviour
     public LineRenderer m_lineRenderer;
     Transform m_transform;
 
+    public GameManager gameManager;
+
     private void Awake()
     {
         m_transform = GetComponent<Transform>();
@@ -23,9 +25,17 @@ public class LaserParticle : MonoBehaviour
     {
         if (Physics2D.Raycast(m_transform.position, -transform.up))
         {
-            RaycastHit2D _hit = Physics2D.Raycast(m_transform.position, -transform.up);
-            Draw2DRay(laserFirePoint.position, _hit.point);
+            RaycastHit2D hit = Physics2D.Raycast(m_transform.position, -transform.up);
+            Draw2DRay(laserFirePoint.position, hit.point);
+
+            if (hit.transform.CompareTag("Player"))
+            {
+                Debug.Log("you hit me");
+                gameManager.LevelFailed();
+                //change sprite to deathsprite
+            }
         }
+
         else
         {
             Draw2DRay(laserFirePoint.position, laserFirePoint.transform.up * defDistanceRay);
