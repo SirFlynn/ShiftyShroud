@@ -271,10 +271,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1336485603056123965, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1336485604213544742, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -327,10 +323,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mouse_Controller
       objectReference: {fileID: 0}
-    - target: {fileID: 1336485604213544744, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1336485604213544745, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
       propertyPath: endWaypoint
       value: 
@@ -339,10 +331,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 351907265}
-    - target: {fileID: 1336485604280172325, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
 --- !u!1 &435115357 stripped
@@ -520,17 +508,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &508641108 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7998728077978429140, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
-  m_PrefabInstance: {fileID: 538761872469571513}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2987e3d9e49492f48b03bc80b16f8c5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &546879801
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +543,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 8b302e2a000000007318220b
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -1206,6 +1183,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6744073302962850159, guid: 7c68d16c577b3e640a3372bdaeb50719, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6744073302962850159, guid: 7c68d16c577b3e640a3372bdaeb50719, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 707670155
+      objectReference: {fileID: 0}
     - target: {fileID: 8760000360952274821, guid: 7c68d16c577b3e640a3372bdaeb50719, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1259,25 +1244,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 123296028607904080, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 123296028886326850, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 123296029558280952, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: manager
       value: 
-      objectReference: {fileID: 508641108}
+      objectReference: {fileID: 706114499}
     - target: {fileID: 123296029558280957, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: m_Name
       value: Crate_Controller
-      objectReference: {fileID: 0}
-    - target: {fileID: 123296029558280957, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 123296029558280958, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: gameManager
@@ -1340,13 +1313,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Path_T-Section
       objectReference: {fileID: 0}
+    - target: {fileID: 4652652106127103429, guid: 67a236ad5d182894db6277f589247ad9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6097378697245110851, guid: 67a236ad5d182894db6277f589247ad9, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6097378697245110851, guid: 67a236ad5d182894db6277f589247ad9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.49
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6097378697245110851, guid: 67a236ad5d182894db6277f589247ad9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1354,7 +1331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6097378697245110851, guid: 67a236ad5d182894db6277f589247ad9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6097378697245110851, guid: 67a236ad5d182894db6277f589247ad9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1384,6 +1361,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7087240793213541760, guid: 67a236ad5d182894db6277f589247ad9, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087240793213541760, guid: 67a236ad5d182894db6277f589247ad9, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 707670155
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67a236ad5d182894db6277f589247ad9, type: 3}
 --- !u!1001 &1214667662
@@ -1397,6 +1382,14 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 351907265}
+    - target: {fileID: 755043284, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755043284, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1491321490815319722, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
       propertyPath: m_Name
       value: Unpowered_Laser
@@ -1415,7 +1408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1491321490815319723, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1491321490815319723, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1840,6 +1833,14 @@ PrefabInstance:
     - target: {fileID: 3113691916963297007, guid: 2532771e350a27f4daa3bf58a9955424, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144248569815595960, guid: 2532771e350a27f4daa3bf58a9955424, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144248569815595960, guid: 2532771e350a27f4daa3bf58a9955424, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 186783859
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2532771e350a27f4daa3bf58a9955424, type: 3}

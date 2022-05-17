@@ -11,6 +11,7 @@ public class LaserParticle : MonoBehaviour
 
     public GameManager gameManager;
 
+
     //will look for layer 10
     private int layerMask = 1<<10;
 
@@ -26,6 +27,8 @@ public class LaserParticle : MonoBehaviour
 
     void ShootLaser()
     {
+        //changes the sorting layer for the line renderer. 
+        m_lineRenderer.sortingLayerName = "Foreground";
         //Shoots a laser in a direction and stops if it hits a collider on the layer defined in layerMask. 
         if (Physics2D.Raycast(m_transform.position, -transform.up, 10, layerMask))
         {
