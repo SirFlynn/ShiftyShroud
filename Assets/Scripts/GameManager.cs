@@ -7,12 +7,13 @@ public class GameManager : MonoBehaviour
     public GameObject levelFailedUI;
     public GameObject levelCompleteUI;
     public static bool GameIsPaused = false;
-    public PauseMenu pauseMenu;
+    public PauseMenu pauseMenuScript;
 
     private void Start()
     {
         //Calls from sripts in the gameobject
-        pauseMenu = GetComponent<PauseMenu>();
+        pauseMenuScript = GetComponent<PauseMenu>();
+        pauseMenuScript.enabled = true;
     }
 
 
@@ -21,7 +22,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("Level Failed");
         levelFailedUI.SetActive(true);
         PauseMenu.GameIsPaused = true;
-        pauseMenu.Pause();
+        pauseMenuScript.Pause();
+        pauseMenuScript.enabled = false;
     }
 
 
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Level Complete");
         levelCompleteUI.SetActive(true);
         PauseMenu.GameIsPaused = true;
-        pauseMenu.Pause();
+        pauseMenuScript.Pause();
+        pauseMenuScript.enabled = false;
     }
 }
