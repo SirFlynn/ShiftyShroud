@@ -5,7 +5,7 @@ using UnityEngine;
 public class MouseController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public Transform movePoint;
+    public Vector3 movePoint;
     private bool moving = false;
     public GameObject endWaypoint;
     public GameObject player;
@@ -19,7 +19,7 @@ public class MouseController : MonoBehaviour
 
     void Start()
     {
-        movePoint.parent = null;
+        movePoint = transform.position;
     }
 
     //Lerps the player to the cheese 
@@ -52,24 +52,28 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, movePoint, moveSpeed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
+        if (Vector3.Distance(transform.position, movePoint) <= .05f)
         {
 
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, whatStopsMovement))
+                if (!Physics2D.OverlapCircle(movePoint + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, whatStopsMovement))
                 {
-                    movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                    movePoint += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                     moving = true;
+
+                    Debug.Log("Moving");
                 }
             } else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, whatStopsMovement))
+                if (!Physics2D.OverlapCircle(movePoint + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, whatStopsMovement))
                 {
-                    movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                    movePoint += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                     moving = true;
+
+                    Debug.Log("Moving");
                 } 
             } else
             {

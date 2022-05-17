@@ -6,6 +6,7 @@ public class Security_Cat : MonoBehaviour
 {
     public GameManager gameManager;
     public Save_Position startPosition;
+    public ControlManager manager;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
