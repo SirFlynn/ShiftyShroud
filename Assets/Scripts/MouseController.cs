@@ -64,7 +64,7 @@ public class MouseController : MonoBehaviour
                     movePoint += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                     moving = true;
 
-                    Debug.Log("Moving");
+                    //Debug.Log("Moving");
                 }
             } else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
