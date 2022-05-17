@@ -6,12 +6,14 @@ public class Save_Position : MonoBehaviour
 {
     Vector3 startPosition;
 
-    Rigidbody2D rigidBody2D;
+    public MouseController mouseController;
 
     // Start is called before the first frame update
     void Start()
     {
         startPosition = transform.position;
+
+        mouseController = GetComponent<MouseController>();
 
         Debug.Log("Start position saved");
     }
@@ -20,7 +22,7 @@ public class Save_Position : MonoBehaviour
     {
         transform.position = startPosition;
 
-        rigidBody2D.velocity = Vector3.zero;
+        mouseController.movePoint = startPosition;
 
         Debug.Log("Returned to start position");
     }
