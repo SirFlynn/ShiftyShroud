@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 123296029558280958}
   - component: {fileID: 123296029558280953}
   - component: {fileID: 123296029558280952}
+  - component: {fileID: 5964431133109198481}
   m_Layer: 10
   m_Name: Crate_Controller
   m_TagString: Crate
@@ -160,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  movePoint: {fileID: 123296028886326851}
+  movePoint: {x: 0, y: 0, z: 0}
   endWaypoint: {fileID: 0}
   player: {fileID: 0}
   duration: 4
@@ -210,3 +211,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
+--- !u!114 &5964431133109198481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123296029558280957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fa13ff5021e13439d757369834e8a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseController: {fileID: 0}
