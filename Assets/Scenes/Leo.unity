@@ -1933,19 +1933,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &751672592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751672586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66fa13ff5021e13439d757369834e8a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseController: {fileID: 0}
 --- !u!1 &835071115
 GameObject:
   m_ObjectHideFlags: 0
@@ -3950,7 +3937,7 @@ PrefabInstance:
     - target: {fileID: 797127199915236097, guid: b21f205b4bf8fa14393feb0d1b9cfbe5, type: 3}
       propertyPath: startPosition
       value: 
-      objectReference: {fileID: 751672592}
+      objectReference: {fileID: 0}
     - target: {fileID: 1571342024655171100, guid: b21f205b4bf8fa14393feb0d1b9cfbe5, type: 3}
       propertyPath: manager
       value: 
@@ -3962,7 +3949,7 @@ PrefabInstance:
     - target: {fileID: 1571342024655171100, guid: b21f205b4bf8fa14393feb0d1b9cfbe5, type: 3}
       propertyPath: startPosition
       value: 
-      objectReference: {fileID: 751672592}
+      objectReference: {fileID: 0}
     - target: {fileID: 7400589826908842488, guid: b21f205b4bf8fa14393feb0d1b9cfbe5, type: 3}
       propertyPath: manager
       value: 
@@ -3974,7 +3961,7 @@ PrefabInstance:
     - target: {fileID: 7400589826908842488, guid: b21f205b4bf8fa14393feb0d1b9cfbe5, type: 3}
       propertyPath: startPosition
       value: 
-      objectReference: {fileID: 751672592}
+      objectReference: {fileID: 0}
     - target: {fileID: 7698888536621270298, guid: b21f205b4bf8fa14393feb0d1b9cfbe5, type: 3}
       propertyPath: m_RootOrder
       value: 1
