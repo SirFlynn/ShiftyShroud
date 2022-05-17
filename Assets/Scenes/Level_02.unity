@@ -3217,6 +3217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1463402698, guid: 2532771e350a27f4daa3bf58a9955424, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 192204166}
     - target: {fileID: 2144732951764314366, guid: 2532771e350a27f4daa3bf58a9955424, type: 3}
       propertyPath: m_Name
       value: Env_Cheese
