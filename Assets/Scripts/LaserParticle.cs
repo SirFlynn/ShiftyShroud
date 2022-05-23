@@ -33,7 +33,7 @@ public class LaserParticle : MonoBehaviour
         //Shoots a laser in a direction and stops if it hits a collider on the layer defined in layerMask. 
         if (Physics2D.Raycast(m_transform.position, -transform.up, 10, layerMask))
         {
-            RaycastHit2D hit = Physics2D.Raycast(m_transform.position, -transform.up);
+            RaycastHit2D hit = Physics2D.Raycast(m_transform.position, -transform.up, 10, layerMask);
             Draw2DRay(laserFireStart.position, hit.point);
 
             //checks if the object the raycast hits is the player and if it is triggers level fail.
