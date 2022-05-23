@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelFailedUI: {fileID: 0}
   levelCompleteUI: {fileID: 0}
-  pauseMenu: {fileID: 538761872819296890}
+  pauseMenuScript: {fileID: 538761872819296890}
 --- !u!114 &538761872819296890
 MonoBehaviour:
   m_ObjectHideFlags: 0
