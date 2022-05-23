@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
         //Calls from sripts in the gameobject
         pauseMenuScript = GetComponent<PauseMenu>();
         pauseMenuScript.enabled = true;
+        pauseMenuScript.Resume();
     }
 
 
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour
         levelFailedUI.SetActive(true);
         PauseMenu.GameIsPaused = true;
         pauseMenuScript.Pause();
+        //stops the player from being able to press esc and unpause the game.
         pauseMenuScript.enabled = false;
     }
 
