@@ -23,7 +23,7 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
-    void Resume ()
+    public void Resume ()
     {
         Time.timeScale = 1f;
         GameIsPaused = false;
