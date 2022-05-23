@@ -1873,6 +1873,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 751179521}
     m_Modifications:
+    - target: {fileID: 1463402698, guid: 2532771e350a27f4daa3bf58a9955424, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 696318829}
     - target: {fileID: 2144732951764314366, guid: 2532771e350a27f4daa3bf58a9955424, type: 3}
       propertyPath: m_Name
       value: Env_Cheese
@@ -2382,6 +2386,14 @@ PrefabInstance:
     - target: {fileID: 1926896933733038413, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926896934324985801, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1714883624}
+    - target: {fileID: 1926896934324985801, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Level3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
@@ -4281,6 +4293,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a0c4bb1dd5303c41857d730502c221f, type: 3}
+--- !u!114 &1714883624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4112233741717346724, guid: 25b8d4239f2a357499bd2fccc29acd39, type: 3}
+  m_PrefabInstance: {fileID: 1920833893}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99780d3062f42c241ba4bf16eba2e1f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1733397421
 PrefabInstance:
   m_ObjectHideFlags: 0
