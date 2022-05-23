@@ -544,7 +544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8760000360952274821, guid: 7c68d16c577b3e640a3372bdaeb50719, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.5
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8760000360952274821, guid: 7c68d16c577b3e640a3372bdaeb50719, type: 3}
       propertyPath: m_LocalPosition.z
@@ -717,14 +717,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 351907265}
-    - target: {fileID: 755043284, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 755043284, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1491321490815319722, guid: d6c8ddfdc094b74499accf110aede1dc, type: 3}
       propertyPath: m_Name
       value: Unpowered_Laser
