@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class CratePath : MonoBehaviour
 {
+    int DefaultLayer = LayerMask.NameToLayer("Default");
+    int EdgeLayer = LayerMask.NameToLayer("Edge");
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Crate")
         {
-            gameObject.SetActive(false);
+            gameObject.layer = DefaultLayer;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Crate")
+        {
+            gameObject.layer = 8;
+            Debug.Log("Edge layer");
         }
     }
 
