@@ -1531,6 +1531,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7039862789497990342, guid: 8c4948241fc6fa148b84c23be3107a11, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 785122718}
     - target: {fileID: 7039862789497990343, guid: 8c4948241fc6fa148b84c23be3107a11, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1825,6 +1829,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCompleteUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1926896933733038409, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926896933733038412, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 785122718}
     - target: {fileID: 1926896933733038413, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2848,6 +2860,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1908821991464223275, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 785122718}
     - target: {fileID: 1908821991464223278, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
       propertyPath: m_Name
       value: LevelFailedUI
