@@ -2034,6 +2034,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 898845979}
     m_Modifications:
+    - target: {fileID: 640789202, guid: 175e64f921288cb4198e8fa64dba6138, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2748f36da14657d4fa2b947e1599d2ef, type: 2}
     - target: {fileID: 1571342026622071441, guid: 175e64f921288cb4198e8fa64dba6138, type: 3}
       propertyPath: meow
       value: 
