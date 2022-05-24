@@ -20,6 +20,21 @@ public class ControlManager : MonoBehaviour
         CurrentPlayer = Players[0];
     }
 
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            ChangePlayer(Players[1]);
+            Players[1].GetComponent<MouseController>().enabled = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            ChangePlayer(Players[2]);
+            Players[2].GetComponent<MouseController>().enabled = true;
+        }
+    }
+
     // Update is called once per frame
     public void ChangePlayer(GameObject player)
     {
