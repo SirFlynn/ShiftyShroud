@@ -13,4 +13,14 @@ public class SelectControllerMouse : MonoBehaviour
         mouse.GetComponent<MouseController>().enabled = true;
         Debug.Log("Mouse selected");
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Space))
+        {
+            manager.ChangePlayer(mouse.gameObject);
+            mouse.GetComponent<MouseController>().enabled = true;
+            Debug.Log("Mouse selected");
+        }
+    }
 }
