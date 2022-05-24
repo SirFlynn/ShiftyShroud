@@ -12,7 +12,6 @@ public class LaserParticle : MonoBehaviour
 
     public GameManager gameManager;
 
-
     //will look for layer 10
     private int layerMask = 1<<10;
 
