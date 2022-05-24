@@ -149,9 +149,9 @@ GameObject:
   - component: {fileID: 7856637590740006760}
   - component: {fileID: 6848140756471350714}
   - component: {fileID: 1547128379669638811}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: MouseSprite
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
