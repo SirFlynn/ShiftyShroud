@@ -234,6 +234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenuUI
       objectReference: {fileID: 0}
+    - target: {fileID: 394004322177964909, guid: ba28603cf8446134b9ea54eeedd6dd5b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 394004322177964910, guid: ba28603cf8446134b9ea54eeedd6dd5b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -703,10 +707,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: CreditsMenuUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7139922706756965226, guid: 905f1538beff8104f9518a6beeeadb2a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7139922706756965230, guid: 905f1538beff8104f9518a6beeeadb2a, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 67045162}
+    - target: {fileID: 7497072816921474748, guid: 905f1538beff8104f9518a6beeeadb2a, type: 3}
+      propertyPath: m_text
+      value: 'Sirkoto51
+
+        Asterial-Arts
+
+        Killumimati
+
+        NuteToonStudios
+
+        LittleRobotSoundFactory
+
+        Mickleness'
+      objectReference: {fileID: 0}
     - target: {fileID: 8520160966484084935, guid: 905f1538beff8104f9518a6beeeadb2a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
