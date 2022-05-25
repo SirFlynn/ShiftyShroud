@@ -241,10 +241,30 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 351907265}
+    - target: {fileID: 1336485604280172322, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336485604280172323, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1336485604280172323, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1336485604280172323, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336485604280172323, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336485604280172323, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
 --- !u!1 &435115357 stripped
