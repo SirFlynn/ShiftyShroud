@@ -2108,6 +2108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Security_Cat (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7698888536264644246, guid: 175e64f921288cb4198e8fa64dba6138, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.285
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 175e64f921288cb4198e8fa64dba6138, type: 3}
 --- !u!1001 &794190937
