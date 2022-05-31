@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaserParticle : MonoBehaviour
 {
-    private float defDistanceRay = 100;
+    public float defDistanceRay = 100;
     public Transform laserFireStart;
     public Transform laserFireEnd;
     public LineRenderer m_lineRenderer;
@@ -30,9 +30,9 @@ public class LaserParticle : MonoBehaviour
         //changes the sorting layer for the line renderer. 
         m_lineRenderer.sortingLayerName = "Foreground";
         //Shoots a laser in a direction and stops if it hits a collider on the layer defined in layerMask. 
-        if (Physics2D.Raycast(m_transform.position, -transform.up, 100, layerMask))
+        if (Physics2D.Raycast(m_transform.position, -transform.up, defDistanceRay, layerMask))
         {
-            RaycastHit2D hit = Physics2D.Raycast(m_transform.position, -transform.up, 100, layerMask);
+            RaycastHit2D hit = Physics2D.Raycast(m_transform.position, -transform.up, defDistanceRay, layerMask);
             Draw2DRay(laserFireStart.position, hit.point);
             Debug.Log(hit.point);
 
