@@ -8,22 +8,23 @@ public class SelectController : MonoBehaviour
     public GameObject mouse;
     private bool touchingPlayer = false;
 
-    //private void OnTriggerEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.tag == "Player")
-    //    {
-    //        touchingPlayer = true;
-    //        Debug.Log("bruhuhubfuibgbdfugbeyuivsed");
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            touchingPlayer = true;
+            Debug.Log("Player is on big mouse");
+        }
+    }
 
-    //private void OnTriggerExit2D(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "Player")
-    //    {
-    //        touchingPlayer = false;
-    //    }
-    //}
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            touchingPlayer = false;
+            Debug.Log("Player is not on big mouse");
+        }
+    }
 
     private void Update()
     {
