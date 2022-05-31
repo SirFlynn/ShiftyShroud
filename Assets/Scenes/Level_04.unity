@@ -2881,7 +2881,7 @@ Transform:
   - {fileID: 1503021536}
   - {fileID: 624053042}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &580909890
 PrefabInstance:
@@ -3651,6 +3651,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1231483041}
+    - target: {fileID: 3394248080731319744, guid: 9821f5b267d432242a912d5be84e7d42, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3394248080731319748, guid: 9821f5b267d432242a912d5be84e7d42, type: 3}
       propertyPath: m_Name
       value: SettingsLevelUI
@@ -4595,7 +4599,7 @@ Transform:
   - {fileID: 1983343775}
   - {fileID: 1174596300}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1061858365
 PrefabInstance:
@@ -7132,7 +7136,7 @@ Transform:
   - {fileID: 1752070034}
   - {fileID: 224040283}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1661360330 stripped
 MonoBehaviour:
@@ -7189,7 +7193,7 @@ Transform:
   - {fileID: 811571048}
   - {fileID: 1833699842}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1672030062
 PrefabInstance:
@@ -8334,6 +8338,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1231483041}
+    - target: {fileID: 1926896933733038412, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1926896933733038413, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
       propertyPath: m_Pivot.x
       value: 0
