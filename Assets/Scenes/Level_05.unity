@@ -4390,9 +4390,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 956126799}
     m_Modifications:
     - target: {fileID: 123296029558280952, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: mouse
+      value: 
+      objectReference: {fileID: 1968583968}
+    - target: {fileID: 123296029558280952, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 1661360330}
+    - target: {fileID: 123296029558280953, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 123296029558280957, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: m_Name
       value: Crate_Controller (1)
@@ -6343,9 +6351,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 956126799}
     m_Modifications:
     - target: {fileID: 123296029558280952, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: mouse
+      value: 
+      objectReference: {fileID: 1968583968}
+    - target: {fileID: 123296029558280952, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 1661360330}
+    - target: {fileID: 123296029558280953, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 123296029558280957, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: m_Name
       value: Crate_Controller

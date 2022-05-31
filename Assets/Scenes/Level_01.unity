@@ -2143,6 +2143,10 @@ PrefabInstance:
       propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1884403626167253009, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2311175823918955699, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1
@@ -2621,7 +2625,7 @@ PrefabInstance:
       objectReference: {fileID: 662315568}
     - target: {fileID: 123296029558280953, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 123296029558280957, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: m_Name
