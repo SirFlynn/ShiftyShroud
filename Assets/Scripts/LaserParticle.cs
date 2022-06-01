@@ -34,14 +34,12 @@ public class LaserParticle : MonoBehaviour
         {
             RaycastHit2D hit = Physics2D.Raycast(m_transform.position, -transform.up, defDistanceRay, layerMask);
             Draw2DRay(laserFireStart.position, hit.point);
-            Debug.Log(hit.point);
 
             //checks if the object the raycast hits is the player and if it is triggers level fail.
             if (hit.transform.CompareTag("Player"))
             {
-                Debug.Log("you hit me");
+                //Debug.Log("you hit me");
                 gameManager.LevelFailed();
-                //change sprite to deathsprite
             }
         }
 
