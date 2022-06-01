@@ -17,6 +17,7 @@ public class MouseController : MonoBehaviour
 
     public GameManager gameManager;
 
+
     void Start()
     {
         movePoint = transform.position;
