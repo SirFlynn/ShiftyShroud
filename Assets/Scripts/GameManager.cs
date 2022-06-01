@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour
     public GameObject levelCompleteUI;
     public static bool GameIsPaused = false;
     public PauseMenu pauseMenuScript;
+    public MouseController mouseControllerScript;
+    public LaserParticle laserParticleScript;
+
+    public AudioSource laserZap;
 
     private void Start()
     {
@@ -15,20 +19,31 @@ public class GameManager : MonoBehaviour
         pauseMenuScript = GetComponent<PauseMenu>();
         pauseMenuScript.enabled = true;
         pauseMenuScript.Resume();
+        mouseControllerScript.enabled = true;
+        laserParticleScript.enabled = true;
     }
 
 
     public void LevelFailed()
     {
-        Debug.Log("Level Failed");
+        laserZap.Play();
+
+        //waits for one second and then runs the LevelFailUI public void code
+        Invoke("LevelFailUI", 1);
+
+        //Disables the laser and mouse particle scripts so that the player cannot move and the laser does not continue to trigger the LevelFailed public void. 
+        laserParticleScript.enabled = false;
+        mouseControllerScript.enabled = false;
+    }
+
+    public void LevelFailUI()
+    {
         levelFailedUI.SetActive(true);
-        PauseMenu.GameIsPaused = true;
         pauseMenuScript.Pause();
+
         //stops the player from being able to press esc and unpause the game.
         pauseMenuScript.enabled = false;
     }
-
-
 
     public void LevelComplete()
     {
