@@ -40,5 +40,6 @@ public class ControlManager : MonoBehaviour
     {
         CurrentPlayer.GetComponent<MouseController>().enabled = false;
         CurrentPlayer = player;
+        player.GetComponent<MouseController>().enabled = true;
     }
 }

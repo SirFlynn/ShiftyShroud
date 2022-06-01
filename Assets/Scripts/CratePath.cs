@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class CratePath : MonoBehaviour
 {
-    int DefaultLayer = LayerMask.NameToLayer("Default");
-    int EdgeLayer = LayerMask.NameToLayer("Edge");
-
+    //allows the mouse to walk onto the big mouse
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Crate")
         {
-            gameObject.layer = DefaultLayer;
+            gameObject.layer = 0;
+            //Debug.Log("Default Layer");
         }
     }
 
@@ -20,7 +19,7 @@ public class CratePath : MonoBehaviour
         if(collision.gameObject.tag == "Crate")
         {
             gameObject.layer = 8;
-            Debug.Log("Edge layer");
+            //Debug.Log("Edge layer");
         }
     }
 

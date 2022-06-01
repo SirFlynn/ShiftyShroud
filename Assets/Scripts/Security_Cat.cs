@@ -21,7 +21,8 @@ public class Security_Cat : MonoBehaviour
         else if (collision.gameObject.tag == "Crate")
         {
             //Debug.Log("The security cat saw the crate!")
-            startPosition.BackToPosition();
+            //startPosition.BackToPosition();
+            collision.GetComponent<Save_Position>().BackToPosition();
             meow.Play();
         }
     }
