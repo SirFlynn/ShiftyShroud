@@ -2820,6 +2820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 956126799}
     m_Modifications:
+    - target: {fileID: 1548788312, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1661360330}
     - target: {fileID: 1336485604213544742, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5635,6 +5639,10 @@ PrefabInstance:
       propertyPath: pauseMenuScript
       value: 
       objectReference: {fileID: 1155516454}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: mouseControllerScript
+      value: 
+      objectReference: {fileID: 1968583972}
     - target: {fileID: 538761872819296889, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: m_Name
       value: GameManager

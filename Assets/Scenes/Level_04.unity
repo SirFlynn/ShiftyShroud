@@ -4104,6 +4104,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2041761821}
     m_Modifications:
+    - target: {fileID: 4874431244030224331, guid: 69ec97f6ddbb19d4d8088679178f09cf, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1661360331}
     - target: {fileID: 6275565545673609906, guid: 69ec97f6ddbb19d4d8088679178f09cf, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4974,6 +4978,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1049711595}
     m_Modifications:
+    - target: {fileID: 1548788312, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1661360330}
     - target: {fileID: 1336485604213544742, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5550,6 +5558,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2041761821}
     m_Modifications:
+    - target: {fileID: 4874431244030224331, guid: 69ec97f6ddbb19d4d8088679178f09cf, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1661360331}
     - target: {fileID: 6275565545673609906, guid: 69ec97f6ddbb19d4d8088679178f09cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7401,6 +7413,14 @@ PrefabInstance:
       propertyPath: levelCompleteUI
       value: 
       objectReference: {fileID: 2107928545}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: laserParticleScript
+      value: 
+      objectReference: {fileID: 1937004373}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: mouseControllerScript
+      value: 
+      objectReference: {fileID: 1968583972}
     - target: {fileID: 538761872819296889, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -8899,6 +8919,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1937004373 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4874431244030224331, guid: 69ec97f6ddbb19d4d8088679178f09cf, type: 3}
+  m_PrefabInstance: {fileID: 1266647882}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43d4445aa943ee849abe1d001a55f205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1944545650
 PrefabInstance:
   m_ObjectHideFlags: 0
