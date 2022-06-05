@@ -7,8 +7,8 @@ public class MouseController : MonoBehaviour
     public float moveSpeed = 5f;
     public Vector3 movePoint;
     private bool moving = false;
-    public GameObject endWaypoint;
-    public GameObject player;
+    //public GameObject endWaypoint;
+    //public GameObject player;
 
     public float duration = 4.0f;
 
@@ -23,7 +23,7 @@ public class MouseController : MonoBehaviour
         movePoint = transform.position;
     }
 
-    //Lerps the player to the cheese 
+    /*Lerps the player to the cheese 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Cheese")
@@ -49,8 +49,7 @@ public class MouseController : MonoBehaviour
             }
         }
     }
-
-    // Update is called once per frame
+    */
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, movePoint, moveSpeed * Time.deltaTime);
