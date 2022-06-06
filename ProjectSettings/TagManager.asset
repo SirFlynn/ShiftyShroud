@@ -9,6 +9,7 @@ TagManager:
   - Pause Menu
   - Cheese
   - Crate
+  - Laser
   layers:
   - Default
   - TransparentFX
