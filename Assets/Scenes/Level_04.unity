@@ -2053,10 +2053,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 811571050}
     - target: {fileID: 1650777082838002036, guid: e4a5e1178fbdb374eb149751a5653dde, type: 3}
-      propertyPath: soundEffectsAudio.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650777082838002036, guid: e4a5e1178fbdb374eb149751a5653dde, type: 3}
       propertyPath: soundEffectsAudio.Array.data[0]
       value: 
       objectReference: {fileID: 583340707}
@@ -2068,6 +2064,10 @@ PrefabInstance:
       propertyPath: soundEffectsAudio.Array.data[2]
       value: 
       objectReference: {fileID: 1836735953}
+    - target: {fileID: 1650777082838002036, guid: e4a5e1178fbdb374eb149751a5653dde, type: 3}
+      propertyPath: soundEffectsAudio.Array.data[3]
+      value: 
+      objectReference: {fileID: 675049347}
     - target: {fileID: 1650777082838002037, guid: e4a5e1178fbdb374eb149751a5653dde, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3405,6 +3405,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 67114453646401356, guid: e4050b7dee888ca49b1f14a2501695c3, type: 3}
   m_PrefabInstance: {fileID: 673149867}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &675049346
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1726817121}
+    m_Modifications:
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858854899430930985, guid: b392756a43a5d164195e1a9175130422, type: 3}
+      propertyPath: m_Name
+      value: Laser Zap
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b392756a43a5d164195e1a9175130422, type: 3}
+--- !u!82 &675049347 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7339213197253303140, guid: b392756a43a5d164195e1a9175130422, type: 3}
+  m_PrefabInstance: {fileID: 675049346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &675049348 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 13150962406554452, guid: b392756a43a5d164195e1a9175130422, type: 3}
+  m_PrefabInstance: {fileID: 675049346}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &710412331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4161,6 +4228,11 @@ PrefabInstance:
 --- !u!4 &956309626 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6275565545673609906, guid: 69ec97f6ddbb19d4d8088679178f09cf, type: 3}
+  m_PrefabInstance: {fileID: 956309625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &956309627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6275565545673609907, guid: 69ec97f6ddbb19d4d8088679178f09cf, type: 3}
   m_PrefabInstance: {fileID: 956309625}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &962270854
@@ -5615,6 +5687,11 @@ PrefabInstance:
 --- !u!4 &1266647883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6275565545673609906, guid: 69ec97f6ddbb19d4d8088679178f09cf, type: 3}
+  m_PrefabInstance: {fileID: 1266647882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1266647884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6275565545673609907, guid: 69ec97f6ddbb19d4d8088679178f09cf, type: 3}
   m_PrefabInstance: {fileID: 1266647882}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1268875413 stripped
@@ -7406,6 +7483,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: laserZap
+      value: 
+      objectReference: {fileID: 675049347}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: levelFailedUI
       value: 
       objectReference: {fileID: 1388210954}
@@ -7421,6 +7502,18 @@ PrefabInstance:
       propertyPath: mouseControllerScript
       value: 
       objectReference: {fileID: 1968583972}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: laserScripts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: laserScripts.Array.data[0]
+      value: 
+      objectReference: {fileID: 1266647884}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: laserScripts.Array.data[1]
+      value: 
+      objectReference: {fileID: 956309627}
     - target: {fileID: 538761872819296889, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -7545,6 +7638,7 @@ Transform:
   - {fileID: 1856269730}
   - {fileID: 1836735952}
   - {fileID: 858859291}
+  - {fileID: 675049348}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8924,7 +9018,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4874431244030224331, guid: 69ec97f6ddbb19d4d8088679178f09cf, type: 3}
   m_PrefabInstance: {fileID: 1266647882}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1266647884}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43d4445aa943ee849abe1d001a55f205, type: 3}
