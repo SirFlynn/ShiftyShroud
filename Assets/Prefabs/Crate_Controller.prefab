@@ -168,14 +168,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   movePoint: {x: 0, y: 0, z: 0}
-  flipSprite: {fileID: 0}
-  horizontal: 0
-  vertical: 0
   duration: 4
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 512
   gameManager: {fileID: 0}
+  mouseSprite: {fileID: 123296028607904081}
 --- !u!61 &123296029558280953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -333,7 +331,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 186783859
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 75bda45da872865438c7003ab6b57e7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -415,7 +413,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 8be655ec0f03ae84fb74b5482373b3e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
