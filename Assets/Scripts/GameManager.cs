@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public PauseMenu pauseMenuScript;
     public MouseController mouseControllerScript;
 
+    public float TimeUntilEnd = 0.5f;
+
     public AudioSource laserZap;
 
     public GameObject[] laserScripts;
@@ -39,7 +41,7 @@ public class GameManager : MonoBehaviour
         laserZap.Play();
 
         //waits for one second and then runs the LevelFailUI public void code
-        Invoke("LevelFailUI", 1);
+        Invoke("LevelFailUI", TimeUntilEnd);
 
         //Disables the laser and mouse particle scripts so that the player cannot move and the laser does not continue to trigger the LevelFailed public void. 
         ToggleLaserScript(false);
