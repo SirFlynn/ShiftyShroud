@@ -12,17 +12,17 @@ public class FlipMovementSprite : MonoBehaviour
     {
         mouseController.movePoint = movePoint1;
 
-        float movePointFloat = movePoint1;
+        //float movePointFloat = movePoint1;
 
-        if (mouseController.movePoint > 0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, -90);
-        }
+        //if (mouseController.movePoint > 0)
+        //{
+        //    transform.eulerAngles = new Vector3(0, 0, -90);
+        //}
 
-        if (mouseController.horizontal < 0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, -180);
-        }
+        //if (mouseController.horizontal < 0)
+        //{
+        //    transform.eulerAngles = new Vector3(0, 0, -180);
+        //}
 
     }
 }
