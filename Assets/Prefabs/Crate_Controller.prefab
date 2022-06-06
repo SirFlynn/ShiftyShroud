@@ -125,8 +125,8 @@ GameObject:
   - component: {fileID: 123296029558280953}
   - component: {fileID: 123296029558280952}
   - component: {fileID: 5964431133109198481}
-  - component: {fileID: 1891879881}
   - component: {fileID: 644639620670476925}
+  - component: {fileID: 435115362}
   m_Layer: 10
   m_Name: Crate_Controller
   m_TagString: Crate
@@ -168,16 +168,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   movePoint: {x: 0, y: 0, z: 0}
-  endWaypoint: {fileID: 0}
-  player: {fileID: 0}
   duration: 4
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 512
-  whatAllowsMovement:
-    serializedVersion: 2
-    m_Bits: 0
   gameManager: {fileID: 0}
+  mouseSprite: {fileID: 123296028607904081}
 --- !u!61 &123296029558280953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -231,7 +227,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseController: {fileID: 0}
---- !u!50 &1891879881
+--- !u!114 &644639620670476925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123296029558280957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c9562927bdb1a45aa524eac137f26e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Selected: {fileID: 1144474176892056253}
+--- !u!50 &435115362
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -252,19 +261,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &644639620670476925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123296029558280957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09c9562927bdb1a45aa524eac137f26e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Selected: {fileID: 1144474176892056253}
 --- !u!1 &1046979777598005814
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +331,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 186783859
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 75bda45da872865438c7003ab6b57e7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -417,7 +413,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 8be655ec0f03ae84fb74b5482373b3e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
