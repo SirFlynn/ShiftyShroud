@@ -92,6 +92,7 @@ Transform:
   - {fileID: 4874431243590214313}
   - {fileID: 6087221658667979547}
   - {fileID: 3284311294650343024}
+  - {fileID: 293832532934017769}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -218,6 +219,7 @@ MonoBehaviour:
   laserFireStart: {fileID: 4874431243590214313}
   laserFireEnd: {fileID: 6087221658667979547}
   m_lineRenderer: {fileID: 4874431244030224330}
+  laserSparks: {fileID: 4046531277782656045}
   gameManager: {fileID: 0}
 --- !u!1 &8759274550663958024
 GameObject:
@@ -301,3 +303,70 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &345991807
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6275565545673609906}
+    m_Modifications:
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046531277571051090, guid: 297d465da3686274f902611b3e67a917, type: 3}
+      propertyPath: m_Name
+      value: Laser Sparks
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 297d465da3686274f902611b3e67a917, type: 3}
+--- !u!1 &4046531277782656045 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4046531277571051090, guid: 297d465da3686274f902611b3e67a917, type: 3}
+  m_PrefabInstance: {fileID: 345991807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &293832532934017769 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
+  m_PrefabInstance: {fileID: 345991807}
+  m_PrefabAsset: {fileID: 0}
