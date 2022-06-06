@@ -3212,6 +3212,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66fa13ff5021e13439d757369834e8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1268875419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123296029558280958, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+  m_PrefabInstance: {fileID: 1983343774}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268875413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4775666c1a7597d4e867a4a13c8f3614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1285941715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4441,22 +4452,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 1661360330}
-    - target: {fileID: 123296029558280953, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 123296029558280957, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: m_Name
       value: Crate_Controller (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 123296029558280958, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1968583968}
-    - target: {fileID: 123296029558280958, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
-      propertyPath: endWaypoint
-      value: 
-      objectReference: {fileID: 29375468}
     - target: {fileID: 123296029558280958, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: gameManager
       value: 
@@ -4503,14 +4502,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 123296029558280959, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5964431133109198481, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
-      propertyPath: mouseController
-      value: 
-      objectReference: {fileID: 1968583972}
-    - target: {fileID: 8605904262449408363, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6482,10 +6473,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1046979777598005814, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5964431133109198481, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: mouseController
       value: 
       objectReference: {fileID: 1968583972}
+    - target: {fileID: 5964431133109198481, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: bigMouseController
+      value: 
+      objectReference: {fileID: 1268875419}
+    - target: {fileID: 6877072740213740465, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877072740213740465, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 186783859
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605904262449408363, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
 --- !u!4 &1983343775 stripped
