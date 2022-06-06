@@ -9,9 +9,10 @@ public class GameManager : MonoBehaviour
     public static bool GameIsPaused = false;
     public PauseMenu pauseMenuScript;
     public MouseController mouseControllerScript;
-    public LaserParticle laserParticleScript;
 
     public AudioSource laserZap;
+
+    public GameObject[] laserScripts;
 
     private void Start()
     {
@@ -20,9 +21,18 @@ public class GameManager : MonoBehaviour
         pauseMenuScript.enabled = true;
         pauseMenuScript.Resume();
         mouseControllerScript.enabled = true;
-        laserParticleScript.enabled = true;
+
+        ToggleLaserScript(true);
     }
 
+    //toggleLaser with set everything in array to either true or false based on bool
+    public void ToggleLaserScript(bool toggleLaser)
+    {
+        for (int i = 1; i < laserScripts.Length; i++)
+        {
+            laserScripts[i].GetComponent<LaserParticle>().enabled = toggleLaser;
+        }
+    }
 
     public void LevelFailed()
     {
@@ -32,7 +42,7 @@ public class GameManager : MonoBehaviour
         Invoke("LevelFailUI", 1);
 
         //Disables the laser and mouse particle scripts so that the player cannot move and the laser does not continue to trigger the LevelFailed public void. 
-        laserParticleScript.enabled = false;
+        ToggleLaserScript(false);
         mouseControllerScript.enabled = false;
     }
 
