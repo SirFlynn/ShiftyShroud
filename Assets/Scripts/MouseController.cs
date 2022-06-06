@@ -6,14 +6,17 @@ public class MouseController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public Vector3 movePoint;
-    private bool moving = false;
+
     //public GameObject endWaypoint;
     //public GameObject player;
+
+    public FlipMovementSprite flipSprite;
+    public float horizontal;
+    public float vertical;
 
     public float duration = 4.0f;
 
     public LayerMask whatStopsMovement;
-    public LayerMask whatAllowsMovement;
 
     public GameManager gameManager;
 
@@ -54,6 +57,9 @@ public class MouseController : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, movePoint, moveSpeed * Time.deltaTime);
 
+        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
+
         if (Vector3.Distance(transform.position, movePoint) <= .05f)
         {
 
@@ -62,39 +68,19 @@ public class MouseController : MonoBehaviour
                 if (!Physics2D.OverlapCircle(movePoint + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, whatStopsMovement))
                 {
                     movePoint += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
-                    moving = true;
 
-                    //Debug.Log("Moving");
+                    transform.eulerAngles = new Vector3(0, 0, -90);
                 }
-            } else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+            }
+            else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
                 if (!Physics2D.OverlapCircle(movePoint + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, whatStopsMovement))
                 {
                     movePoint += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
-                    moving = true;
 
-                    //Debug.Log("Moving");
-                } 
-            } else
-            {
-                moving = false;
-            }
-        } 
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Camera")
-        {
-            if(gameObject.tag == "Player")
-            {
-                //Send Mouse back to starting position
-                gameManager.LevelFailed();
-            }
-            else if (gameObject.tag == "MoveableCrate" && moving == true)
-            {
-                //Send crate back to starting position
+                    transform.eulerAngles = new Vector3(0, -180, 0);
+                }
             }
         }
     }
-}
+} 
