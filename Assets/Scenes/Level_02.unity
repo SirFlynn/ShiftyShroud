@@ -2431,6 +2431,14 @@ PrefabInstance:
       propertyPath: startPosition
       value: 
       objectReference: {fileID: 1891879876}
+    - target: {fileID: 4834359880804675989, guid: 175e64f921288cb4198e8fa64dba6138, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4834359880804675989, guid: 175e64f921288cb4198e8fa64dba6138, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4834359881759283768, guid: 175e64f921288cb4198e8fa64dba6138, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2478,6 +2486,10 @@ PrefabInstance:
     - target: {fileID: 4834359881759283770, guid: 175e64f921288cb4198e8fa64dba6138, type: 3}
       propertyPath: m_Name
       value: Security_Cat (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5653999475625820383, guid: 175e64f921288cb4198e8fa64dba6138, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7698888536264644246, guid: 175e64f921288cb4198e8fa64dba6138, type: 3}
       propertyPath: m_LocalPosition.y
