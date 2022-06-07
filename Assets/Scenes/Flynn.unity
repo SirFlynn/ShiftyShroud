@@ -3139,6 +3139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCompleteUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1926896933733038409, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1926896933733038412, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
       propertyPath: m_Camera
       value: 

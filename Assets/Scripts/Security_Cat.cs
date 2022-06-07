@@ -10,19 +10,20 @@ public class Security_Cat : MonoBehaviour
 
     public AudioSource meow;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
             //Debug.Log("The security cat saw the mouse!");
-            gameManager.LevelFailed();
+            meow.Play();
+            gameManager.LevelFailedCat();
         }
         
-        else if (collision.gameObject.tag == "Crate")
+        else if (other.tag == "Crate")
         {
             //Debug.Log("The security cat saw the crate!")
             //startPosition.BackToPosition();
-            collision.GetComponent<Save_Position>().BackToPosition();
+            other.GetComponent<Save_Position>().BackToPosition();
             meow.Play();
         }
     }

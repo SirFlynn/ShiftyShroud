@@ -3198,7 +3198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 123296029558280959, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.5
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 123296029558280959, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3232,10 +3232,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1046979777598005814, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5964431133109198481, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: mouseController
       value: 
       objectReference: {fileID: 798774720}
+    - target: {fileID: 8605904262449408363, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
 --- !u!4 &1222725851 stripped
@@ -4605,6 +4613,10 @@ PrefabInstance:
     - target: {fileID: 1926896933733038409, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
       propertyPath: m_Name
       value: LevelCompleteUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926896933733038409, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1926896933733038412, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
       propertyPath: m_Camera
