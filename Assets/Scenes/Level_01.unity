@@ -2062,6 +2062,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1712034822}
+    - target: {fileID: 7039862791097626644, guid: 8c4948241fc6fa148b84c23be3107a11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7039862791097626647, guid: 8c4948241fc6fa148b84c23be3107a11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -3251,6 +3255,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1855670504}
     - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: optionsMenuUI
+      value: 
+      objectReference: {fileID: 2580183462598859993}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: levelCompleteUI
       value: 
       objectReference: {fileID: 1284703956}
@@ -3282,6 +3290,10 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 1132774205}
+    - target: {fileID: 538761872819296890, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: optionsMenuUI
+      value: 
+      objectReference: {fileID: 2580183462598859993}
     - target: {fileID: 538761872819296891, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: m_RootOrder
       value: 2
