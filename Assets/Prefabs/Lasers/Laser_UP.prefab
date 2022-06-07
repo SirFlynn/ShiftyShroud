@@ -92,7 +92,6 @@ Transform:
   - {fileID: 4874431243590214313}
   - {fileID: 6087221658667979547}
   - {fileID: 3284311294650343024}
-  - {fileID: 289774039388544215}
   - {fileID: 293832533660295320}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -220,7 +219,7 @@ MonoBehaviour:
   laserFireStart: {fileID: 4874431243590214313}
   laserFireEnd: {fileID: 6087221658667979547}
   m_lineRenderer: {fileID: 4874431244030224330}
-  laserSparks: {fileID: 4052876912343661075}
+  laserSparks: {fileID: 4046531277571051090, guid: e97035cd3c84d364fa0d53348765f43c, type: 3}
   gameManager: {fileID: 0}
 --- !u!1 &8759274550663958024
 GameObject:
@@ -313,7 +312,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
       propertyPath: m_LocalPosition.x
@@ -369,71 +368,4 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
   m_PrefabInstance: {fileID: 539314190}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6364891527083073
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6275565545673609906}
-    m_Modifications:
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4046531277571051090, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_Name
-      value: Laser Sparks
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 297d465da3686274f902611b3e67a917, type: 3}
---- !u!1 &4052876912343661075 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4046531277571051090, guid: 297d465da3686274f902611b3e67a917, type: 3}
-  m_PrefabInstance: {fileID: 6364891527083073}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &289774039388544215 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-  m_PrefabInstance: {fileID: 6364891527083073}
   m_PrefabAsset: {fileID: 0}
