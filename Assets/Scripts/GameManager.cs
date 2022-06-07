@@ -48,6 +48,16 @@ public class GameManager : MonoBehaviour
         mouseControllerScript.enabled = false;
     }
 
+    public void LevelFailedCat()
+    {
+        //waits for one second and then runs the LevelFailUI public void code
+        Invoke("LevelFailUI", TimeUntilEnd);
+
+        //Disables the laser and mouse particle scripts so that the player cannot move and the laser does not continue to trigger the LevelFailed public void. 
+        ToggleLaserScript(false);
+        mouseControllerScript.enabled = false;
+    }
+
     public void LevelFailUI()
     {
         levelFailedUI.SetActive(true);
