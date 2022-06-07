@@ -9,12 +9,14 @@ public class GameManager : MonoBehaviour
     public static bool GameIsPaused = false;
     public PauseMenu pauseMenuScript;
     public MouseController mouseControllerScript;
-
+    
     public float TimeUntilEnd = 0.5f;
 
     public AudioSource laserZap;
 
     public GameObject[] laserScripts;
+
+    public int levelsDone = 0;
 
     private void Start()
     {
@@ -74,5 +76,11 @@ public class GameManager : MonoBehaviour
         PauseMenu.GameIsPaused = true;
         pauseMenuScript.Pause();
         pauseMenuScript.enabled = false;
+
+        levelsDone = PlayerPrefs.GetInt("levelsDone");
+
+        levelsDone++;
+
+        Debug.Log(levelsDone);
     }
 }
