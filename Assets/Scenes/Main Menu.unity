@@ -1296,6 +1296,50 @@ PrefabInstance:
       objectReference: {fileID: 115882347}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54621982c724b074682c09424d9e5386, type: 3}
+--- !u!114 &520191958 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6698007247899602624, guid: 54621982c724b074682c09424d9e5386, type: 3}
+  m_PrefabInstance: {fileID: 520191957}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &520191959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6698007247553359143, guid: 54621982c724b074682c09424d9e5386, type: 3}
+  m_PrefabInstance: {fileID: 520191957}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &520191960 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6698007247854941229, guid: 54621982c724b074682c09424d9e5386, type: 3}
+  m_PrefabInstance: {fileID: 520191957}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &520191961 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6698007247882607637, guid: 54621982c724b074682c09424d9e5386, type: 3}
+  m_PrefabInstance: {fileID: 520191957}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1209992841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,6 +1747,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4112233741717346724, guid: 25b8d4239f2a357499bd2fccc29acd39, type: 3}
+      propertyPath: level02Button
+      value: 
+      objectReference: {fileID: 520191961}
+    - target: {fileID: 4112233741717346724, guid: 25b8d4239f2a357499bd2fccc29acd39, type: 3}
+      propertyPath: level03Button
+      value: 
+      objectReference: {fileID: 520191960}
+    - target: {fileID: 4112233741717346724, guid: 25b8d4239f2a357499bd2fccc29acd39, type: 3}
+      propertyPath: level04Button
+      value: 
+      objectReference: {fileID: 520191959}
+    - target: {fileID: 4112233741717346724, guid: 25b8d4239f2a357499bd2fccc29acd39, type: 3}
+      propertyPath: level05Button
+      value: 
+      objectReference: {fileID: 520191958}
     - target: {fileID: 4112233741717346725, guid: 25b8d4239f2a357499bd2fccc29acd39, type: 3}
       propertyPath: m_Name
       value: UIManager

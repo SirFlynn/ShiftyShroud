@@ -7,7 +7,51 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public GameManager gameManager;
+    public Button level02Button, level03Button, level04Button, level05Button;
+    int levelPassed;
+
+    void Start()
+    {
+        levelPassed = PlayerPrefs.GetInt("LevelPassed");
+
+        level02Button.interactable = false;
+        level03Button.interactable = false;
+        level04Button.interactable = false;
+        level05Button.interactable = false;
+
+        switch (levelPassed)
+        {
+            case 1:
+                level02Button.interactable = true;
+                break;
+            case 2:
+                level03Button.interactable = true;
+                break;
+            case 3:
+                level04Button.interactable = true;
+                break;
+            case 4:
+                level05Button.interactable = true;
+                break;
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown("r"))
+        {
+            level02Button.interactable = false;
+            level03Button.interactable = false;
+            level04Button.interactable = false;
+            level05Button.interactable = false;
+
+            PlayerPrefs.DeleteAll();
+        }
+    }
+    public void levelToLoad (int level)
+    {
+        SceneManager.LoadScene(level);
+    }
 
     public void Quit()
     {
@@ -15,11 +59,9 @@ public class UIManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void Level1()
+/*    public void Level1()
     {
-        //SceneManager.LoadScene("Level_01");
-
-        Debug.Log(gameManager.levelsDone);
+        SceneManager.LoadScene("Level_01");
     }
 
     public void Level2()
@@ -40,7 +82,7 @@ public class UIManager : MonoBehaviour
     public void Level5()
     {
         SceneManager.LoadScene("Level_05");
-    }
+    }*/
 
     public void MainMenu()
     {
