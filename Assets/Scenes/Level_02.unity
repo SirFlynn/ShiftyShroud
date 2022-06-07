@@ -3432,6 +3432,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 938730791}
     - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: optionsMenuUI
+      value: 
+      objectReference: {fileID: 1333395572}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: levelCompleteUI
       value: 
       objectReference: {fileID: 1711238199}
