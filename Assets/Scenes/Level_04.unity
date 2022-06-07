@@ -9529,28 +9529,28 @@ Transform:
   - {fileID: 275899715}
   - {fileID: 750539863}
   - {fileID: 944199147}
+  - {fileID: 290554264}
   - {fileID: 697199946}
   - {fileID: 463281395}
   - {fileID: 98652088}
   - {fileID: 444415582}
-  - {fileID: 1514583646}
-  - {fileID: 290554264}
-  - {fileID: 1084799444}
-  - {fileID: 393453587}
-  - {fileID: 2001519321}
-  - {fileID: 1332098467}
-  - {fileID: 981289395}
   - {fileID: 50756504}
   - {fileID: 59855312}
-  - {fileID: 179586288}
-  - {fileID: 1152334943}
   - {fileID: 1083999637}
+  - {fileID: 179586288}
+  - {fileID: 1514583646}
+  - {fileID: 1084799444}
+  - {fileID: 1152334943}
+  - {fileID: 393453587}
+  - {fileID: 2001519321}
   - {fileID: 155229106}
-  - {fileID: 1557495472}
+  - {fileID: 1332098467}
+  - {fileID: 981289395}
   - {fileID: 695841323}
   - {fileID: 1734577626}
   - {fileID: 443627334}
   - {fileID: 2073725377}
+  - {fileID: 1557495472}
   - {fileID: 559469891}
   - {fileID: 925531061}
   - {fileID: 1096665956}
@@ -15858,10 +15858,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1046979777598005814, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5964431133109198481, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
       propertyPath: mouseController
       value: 
       objectReference: {fileID: 1968583972}
+    - target: {fileID: 8605904262449408363, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d598e43e4f188a5479a0a75669c27cb7, type: 3}
 --- !u!4 &1983343775 stripped
