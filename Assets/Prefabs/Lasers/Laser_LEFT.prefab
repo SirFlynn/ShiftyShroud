@@ -92,7 +92,6 @@ Transform:
   - {fileID: 4874431243590214313}
   - {fileID: 6087221658667979547}
   - {fileID: 3284311294650343024}
-  - {fileID: 293832531782702284}
   - {fileID: 3676725242409960904}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -220,7 +219,7 @@ MonoBehaviour:
   laserFireStart: {fileID: 4874431243590214313}
   laserFireEnd: {fileID: 6087221658667979547}
   m_lineRenderer: {fileID: 4874431244030224330}
-  laserSparks: {fileID: 4046531276765590024}
+  laserSparks: {fileID: 4046531277571051090, guid: 2834ef02ef0c13f43a9e76d76ca2187f, type: 3}
   gameManager: {fileID: 0}
 --- !u!1 &8759274550663958024
 GameObject:
@@ -304,77 +303,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1346354266
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6275565545673609906}
-    m_Modifications:
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071078
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.7071058
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3018659119693424329, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4046531277571051090, guid: 297d465da3686274f902611b3e67a917, type: 3}
-      propertyPath: m_Name
-      value: Laser Sparks
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 297d465da3686274f902611b3e67a917, type: 3}
---- !u!1 &4046531276765590024 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4046531277571051090, guid: 297d465da3686274f902611b3e67a917, type: 3}
-  m_PrefabInstance: {fileID: 1346354266}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &293832531782702284 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
-  m_PrefabInstance: {fileID: 1346354266}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3969286460383554910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -384,7 +312,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 293832533125310614, guid: 297d465da3686274f902611b3e67a917, type: 3}
       propertyPath: m_LocalPosition.x
