@@ -7112,6 +7112,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1926896933733038413, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
   m_PrefabInstance: {fileID: 1284703955}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1284703958 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1284703961, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+  m_PrefabInstance: {fileID: 1284703955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1306149298
 GameObject:
   m_ObjectHideFlags: 0
@@ -10564,6 +10569,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1908821991464223274, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
   m_PrefabInstance: {fileID: 1855670503}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1855670506 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1855670506, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
+  m_PrefabInstance: {fileID: 1855670503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1859912080 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4145934509029359467, guid: 79cae3daf64f4ee4390ea7ba4c49abd3, type: 3}
@@ -11469,7 +11479,7 @@ PrefabInstance:
       objectReference: {fileID: 924484310436704542}
     - target: {fileID: 1650777082838002036, guid: e4a5e1178fbdb374eb149751a5653dde, type: 3}
       propertyPath: soundEffectsAudio.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1650777082838002036, guid: e4a5e1178fbdb374eb149751a5653dde, type: 3}
       propertyPath: soundEffectsAudio.Array.data[0]
@@ -11483,6 +11493,14 @@ PrefabInstance:
       propertyPath: soundEffectsAudio.Array.data[2]
       value: 
       objectReference: {fileID: 2042930471565085721}
+    - target: {fileID: 1650777082838002036, guid: e4a5e1178fbdb374eb149751a5653dde, type: 3}
+      propertyPath: soundEffectsAudio.Array.data[3]
+      value: 
+      objectReference: {fileID: 1284703958}
+    - target: {fileID: 1650777082838002036, guid: e4a5e1178fbdb374eb149751a5653dde, type: 3}
+      propertyPath: soundEffectsAudio.Array.data[4]
+      value: 
+      objectReference: {fileID: 1855670506}
     - target: {fileID: 1650777082838002037, guid: e4a5e1178fbdb374eb149751a5653dde, type: 3}
       propertyPath: m_RootOrder
       value: 1
