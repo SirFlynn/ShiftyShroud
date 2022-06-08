@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public PauseMenu pauseMenuScript;
     public GameObject optionsMenuUI;
     public MouseController mouseControllerScript;
+    public GameObject instructions;
 
     public float TimeUntilEnd = 0.5f;
 
@@ -56,6 +57,11 @@ public class GameManager : MonoBehaviour
     {
         laserZap.Play();
 
+        if(instructions == true)
+        {
+            instructions.SetActive(false);
+        }
+
         //waits for one second and then runs the LevelFailUI public void code
         Invoke("LevelFailUI", TimeUntilEnd);
 
@@ -85,6 +91,10 @@ public class GameManager : MonoBehaviour
 
     public void LevelComplete()
     {
+        if (instructions == true)
+        {
+            instructions.SetActive(false);
+        }
         Debug.Log("Level Complete");
         levelCompleteUI.SetActive(true);
         PauseMenu.GameIsPaused = true;
