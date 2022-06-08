@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject levelCompleteUI;
     public static bool GameIsPaused = false;
     public PauseMenu pauseMenuScript;
+    public GameObject optionsMenuUI;
     public MouseController mouseControllerScript;
 
     public float TimeUntilEnd = 0.5f;
@@ -25,6 +26,21 @@ public class GameManager : MonoBehaviour
         mouseControllerScript.enabled = true;
 
         ToggleLaserScript(true);
+    }
+
+    //Ensures that the pause menu cannot be opened in the options menu
+    void Update()
+    {
+        //check to see if the options menu is open and if it is then the pause menu script is disabled
+        if (optionsMenuUI.activeSelf)
+        {
+            pauseMenuScript.enabled = false;
+        }
+
+        else
+        {
+            pauseMenuScript.enabled = true;
+        }
     }
 
     //toggleLaser with set everything in array to either true or false based on bool
