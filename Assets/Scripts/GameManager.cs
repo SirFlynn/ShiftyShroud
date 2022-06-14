@@ -8,15 +8,15 @@ public class GameManager : MonoBehaviour
     public GameObject levelCompleteUI;
     public static bool GameIsPaused = false;
     public PauseMenu pauseMenuScript;
+    public GameObject optionsMenuUI;
     public MouseController mouseControllerScript;
-    
+    public GameObject instructions;
+
     public float TimeUntilEnd = 0.5f;
 
     public AudioSource laserZap;
 
     public GameObject[] laserScripts;
-
-    public int levelsDone = 0;
 
     private void Start()
     {
@@ -27,6 +27,21 @@ public class GameManager : MonoBehaviour
         mouseControllerScript.enabled = true;
 
         ToggleLaserScript(true);
+    }
+
+    //Ensures that the pause menu cannot be opened in the options menu
+    void Update()
+    {
+        //check to see if the options menu is open and if it is then the pause menu script is disabled
+        if (optionsMenuUI.activeSelf)
+        {
+            pauseMenuScript.enabled = false;
+        }
+
+        else
+        {
+            pauseMenuScript.enabled = true;
+        }
     }
 
     //toggleLaser with set everything in array to either true or false based on bool
@@ -41,6 +56,11 @@ public class GameManager : MonoBehaviour
     public void LevelFailed()
     {
         laserZap.Play();
+
+        if(instructions == true)
+        {
+            instructions.SetActive(false);
+        }
 
         //waits for one second and then runs the LevelFailUI public void code
         Invoke("LevelFailUI", TimeUntilEnd);
@@ -71,16 +91,14 @@ public class GameManager : MonoBehaviour
 
     public void LevelComplete()
     {
+        if (instructions == true)
+        {
+            instructions.SetActive(false);
+        }
         Debug.Log("Level Complete");
         levelCompleteUI.SetActive(true);
         PauseMenu.GameIsPaused = true;
         pauseMenuScript.Pause();
         pauseMenuScript.enabled = false;
-
-        levelsDone = PlayerPrefs.GetInt("levelsDone");
-
-        levelsDone++;
-
-        Debug.Log(levelsDone);
     }
 }
