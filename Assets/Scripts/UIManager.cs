@@ -7,50 +7,20 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    // public GameObject mainMenuUI;
-    // public GameObject levelMenuUI;
-    // public GameObject creditsMenuUI;
-    // public GameObject settingsMenuUI;
+    public Button level02Button, level03Button, level04Button, level05Button;
+    int levelPassed;
 
-    // Start is called before the first frame update
-    //void Start()
-    //{
-    //    mainMenuUI = GameObject.Find("MainMenuUI");
-    //    levelMenuUI = GameObject.Find("LevelMenuUI");
-    //    settingsMenuUI = GameObject.Find("SettingsMenuUI");
-    //    creditsMenuUI = GameObject.Find("CreditsMenuUI");
-    //
-    //    mainMenuUI.SetActive(true);
-    //    levelMenuUI.SetActive(false);
-    //    settingsMenuUI.SetActive(false);
-    //    creditsMenuUI.SetActive(false);
+    void Start()
+    {
+    }
 
-
-    //public void PlayGame()
-    //{
-    //    mainMenuUI.SetActive(false);
-    //    levelMenuUI.SetActive(true);
-    //}
-
-    //public void Return()
-    //{
-    //    mainMenuUI.SetActive(true);
-    //    levelMenuUI.SetActive(false);
-    //    creditsMenuUI.SetActive(false);
-    //    settingsMenuUI.SetActive(false);
-    //}
-
-    //public void Settings()
-    //{
-    //    mainMenuUI.SetActive(false);
-    //   settingsMenuUI.SetActive(true);
-    //}
-
-    //public void Credits()
-    //{
-    //    mainMenuUI.SetActive(false);
-    //    creditsMenuUI.SetActive(true);
-    //}
+    void Update()
+    {
+    }
+    public void levelToLoad (int level)
+    {
+        SceneManager.LoadScene(level);
+    }
 
     public void Quit()
     {
