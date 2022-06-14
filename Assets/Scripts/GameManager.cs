@@ -90,67 +90,47 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void LevelFailed()
-    {
-        laserZap.Play();
+    //public void LevelFailed()
+    //{
+        //laserZap.Play();
 
-        if(instructions == true)
-        {
-            instructions.SetActive(false);
-        }
+        //if(instructions == true)
+        //{
+         //   instructions.SetActive(false);
+        //}
 
         //waits for one second and then runs the LevelFailUI public void code
-        Invoke("LevelFailUI", TimeUntilEnd);
+        //Invoke("LevelFailUI", TimeUntilEnd);
 
         //Disables the laser and mouse particle scripts so that the player cannot move and the laser does not continue to trigger the LevelFailed public void. 
-        ToggleLaserScript(false);
-        mouseControllerScript.enabled = false;
-    }
+       // ToggleLaserScript(false);
+        //mouseControllerScript.enabled = false;
+    //}
 
     public void LevelFailedCat()
     {
         //waits for one second and then runs the LevelFailUI public void code
-        Invoke("LevelFailUI", TimeUntilEnd);
+        //Invoke("LevelFailUI", TimeUntilEnd);
 
         //Disables the laser and mouse particle scripts so that the player cannot move and the laser does not continue to trigger the LevelFailed public void. 
-        ToggleLaserScript(false);
-        mouseControllerScript.enabled = false;
+        //ToggleLaserScript(false);
+        //mouseControllerScript.enabled = false;
+        StartCoroutine(FailCatMenu());
     }
 
-    public void LevelFailUI()
+    public void LevelFailed()
     {
-        //levelFailedUI.SetActive(true);
-        //myUIGroup.alpha = 1;
-
-        //fadeIn = true;
-
-        // Starts the code of the FailMenu function found within the first IEnumerator
         StartCoroutine(FailMenu());
-
-        //pauseMenuScript.Pause();
-
-        //stops the player from being able to press esc and unpause the game.
-        //pauseMenuScript.enabled = false;
     }
 
     public void LevelComplete()
     {
-        //if (instructions == true)
-        //{
-        //    instructions.SetActive(false);
-        //}
-        //Debug.Log("Level Complete");
-        //levelCompleteUI.SetActive(true);
-        //PauseMenu.GameIsPaused = true;
-        //pauseMenuScript.Pause();
-        //pauseMenuScript.enabled = false;
-
-        // Starts the code of the WinMenu function found within the second Enumerator
         StartCoroutine(WinMenu());
     }
 
-    IEnumerator FailMenu()
+    IEnumerator FailCatMenu()
     {
+
         if (instructions == true)
         {
             instructions.SetActive(false);
@@ -158,6 +138,34 @@ public class GameManager : MonoBehaviour
 
         // sets the fail menu UI fade to true
         failMenuFadeIn = true;
+
+        mouseControllerScript.enabled = false;
+
+        // waits 3 seconds before executing the code below
+        yield return new WaitForSeconds(3.0f);
+
+        // runs the pause function from the pause menu script (which pauses the game)
+        pauseMenuScript.Pause();
+
+        // stops the player from being able to pause the game within the fail menu UI
+        pauseMenuScript.enabled = false;
+    }
+
+    IEnumerator FailMenu()
+    {
+        laserZap.Play();
+
+        ToggleLaserScript(false);
+
+        if (instructions == true)
+        {
+            instructions.SetActive(false);
+        }
+
+        // sets the fail menu UI fade to true
+        failMenuFadeIn = true;
+
+        mouseControllerScript.enabled = false;
 
         // waits 3 seconds before executing the code below
         yield return new WaitForSeconds(3.0f);
@@ -223,6 +231,9 @@ public class GameManager : MonoBehaviour
         //PlayerPrefs.SetInt("LevelsComplete", PlayerPrefs.GetInt("LevelsComplete") + 1);
 
         winMenuFadeIn = true;
+
+        //disables mouse controller
+        mouseControllerScript.enabled = false;
 
         yield return new WaitForSeconds(3.0f);
 

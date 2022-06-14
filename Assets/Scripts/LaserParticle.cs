@@ -42,10 +42,10 @@ public class LaserParticle : MonoBehaviour
 
             //checks if the object the raycast hits is the player and if it is triggers level fail.
                 if (hit.transform.CompareTag("Player"))
-            {
-                //Debug.Log("you hit me");
-                gameManager.LevelFailed();
-            }
+                {
+                    //Debug.Log("you hit me");
+                    gameManager.LevelFailed();
+                }
         }
 
         else
