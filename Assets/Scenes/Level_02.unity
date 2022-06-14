@@ -3428,6 +3428,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: winMenuFade
+      value: 
+      objectReference: {fileID: 2073752395}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: failMenuFade
+      value: 
+      objectReference: {fileID: 2073752395}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: levelFailedUI
       value: 
       objectReference: {fileID: 938730791}
@@ -5471,6 +5479,11 @@ RectTransform:
 --- !u!82 &2073752394 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1855670506, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
+  m_PrefabInstance: {fileID: 2073752392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &2073752395 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 1438613809107433658, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
   m_PrefabInstance: {fileID: 2073752392}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2097415036

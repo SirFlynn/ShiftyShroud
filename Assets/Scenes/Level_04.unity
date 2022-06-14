@@ -2961,6 +2961,11 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 1855670506, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
   m_PrefabInstance: {fileID: 1223871719}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &1223871722 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 1438613809107433658, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
+  m_PrefabInstance: {fileID: 1223871719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1231483039
 GameObject:
   m_ObjectHideFlags: 0
@@ -4148,6 +4153,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 675049347}
     - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: winMenuFade
+      value: 
+      objectReference: {fileID: 1821978141}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: failMenuFade
+      value: 
+      objectReference: {fileID: 1223871722}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: levelFailedUI
       value: 
       objectReference: {fileID: 1388210954}
@@ -4894,6 +4907,11 @@ RectTransform:
 --- !u!82 &1821978140 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1284703961, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+  m_PrefabInstance: {fileID: 1821978138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &1821978141 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 7039699475382392468, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
   m_PrefabInstance: {fileID: 1821978138}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1833699841

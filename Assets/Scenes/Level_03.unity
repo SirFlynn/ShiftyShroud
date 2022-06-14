@@ -1982,6 +1982,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1908821991464223278, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
   m_PrefabInstance: {fileID: 1899471142}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &809215285 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 1438613809107433658, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
+  m_PrefabInstance: {fileID: 1899471142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &857262729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2616,6 +2621,11 @@ RectTransform:
 --- !u!82 &952426408 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1284703961, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+  m_PrefabInstance: {fileID: 952426406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &952426409 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 7039699475382392468, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
   m_PrefabInstance: {fileID: 952426406}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &996002057
@@ -3689,6 +3699,18 @@ PrefabInstance:
       propertyPath: laserZap
       value: 
       objectReference: {fileID: 799065784}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: myUIGroup
+      value: 
+      objectReference: {fileID: 809215285}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: winMenuFade
+      value: 
+      objectReference: {fileID: 952426409}
+    - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
+      propertyPath: failMenuFade
+      value: 
+      objectReference: {fileID: 809215285}
     - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: levelFailedUI
       value: 

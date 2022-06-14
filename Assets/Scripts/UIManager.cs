@@ -12,41 +12,10 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        levelPassed = PlayerPrefs.GetInt("LevelPassed");
-
-        level02Button.interactable = false;
-        level03Button.interactable = false;
-        level04Button.interactable = false;
-        level05Button.interactable = false;
-
-        switch (levelPassed)
-        {
-            case 1:
-                level02Button.interactable = true;
-                break;
-            case 2:
-                level03Button.interactable = true;
-                break;
-            case 3:
-                level04Button.interactable = true;
-                break;
-            case 4:
-                level05Button.interactable = true;
-                break;
-        }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown("r"))
-        {
-            level02Button.interactable = false;
-            level03Button.interactable = false;
-            level04Button.interactable = false;
-            level05Button.interactable = false;
-
-            PlayerPrefs.DeleteAll();
-        }
     }
     public void levelToLoad (int level)
     {
@@ -59,7 +28,7 @@ public class UIManager : MonoBehaviour
         Application.Quit();
     }
 
-/*    public void Level1()
+    public void Level1()
     {
         SceneManager.LoadScene("Level_01");
     }
@@ -82,7 +51,7 @@ public class UIManager : MonoBehaviour
     public void Level5()
     {
         SceneManager.LoadScene("Level_05");
-    }*/
+    }
 
     public void MainMenu()
     {
