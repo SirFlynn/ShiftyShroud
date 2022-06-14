@@ -12,6 +12,8 @@ public class Cheese : MonoBehaviour
         if (other.tag == "Player")
         {
             gameManager.LevelComplete();
+
+            LevelController.instance.YouWin();
         }
     }
 }
