@@ -176,7 +176,51 @@ public class GameManager : MonoBehaviour
             instructions.SetActive(false);
         }
 
-        PlayerPrefs.SetInt("levelsComplete", PlayerPrefs.GetInt("LevelsComplete") + 1);
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        int levelsComplete = PlayerPrefs.GetInt("LevelsComplete");
+
+        if (currentScene == 1)
+        {
+            //PlayerPrefs.SetInt("LevelsComplete", 1);
+
+            if (levelsComplete < 1)
+            {
+                PlayerPrefs.SetInt("LevelsComplete", 1);
+            }
+        }
+
+        if (currentScene == 2)
+        {
+            //PlayerPrefs.SetInt("LevelsComplete", 2);
+
+            if (levelsComplete < 2)
+            {
+                PlayerPrefs.SetInt("LevelsComplete", 2);
+            }
+        }
+
+        if (currentScene == 3)
+        {
+            //PlayerPrefs.SetInt("LevelsComplete", 3);
+
+            if (levelsComplete < 3)
+            {
+                PlayerPrefs.SetInt("LevelsComplete", 3);
+            }
+        }
+
+        if (currentScene == 4)
+        {
+            //PlayerPrefs.SetInt("LevelsComplete", 4);
+
+            if (levelsComplete < 4)
+            {
+                PlayerPrefs.SetInt("LevelsComplete", 4);
+            }
+        }
+
+        //PlayerPrefs.SetInt("LevelsComplete", PlayerPrefs.GetInt("LevelsComplete") + 1);
 
         winMenuFadeIn = true;
 
