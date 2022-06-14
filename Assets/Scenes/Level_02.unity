@@ -2065,11 +2065,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1336485604213544742, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1336485604213544742, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 1336485604213544742, guid: 84d20c0a29e84ae478ee0cef5576a917, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3430,7 +3430,7 @@ PrefabInstance:
     - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: winMenuFade
       value: 
-      objectReference: {fileID: 2073752395}
+      objectReference: {fileID: 1711238200}
     - target: {fileID: 538761872819296888, guid: 5332584e7816cc44485616d0c6e4e703, type: 3}
       propertyPath: failMenuFade
       value: 
@@ -4555,6 +4555,11 @@ Transform:
 --- !u!1 &1711238199 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1926896933733038409, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
+  m_PrefabInstance: {fileID: 1565602473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &1711238200 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 7039699475382392468, guid: cd91e053925e2d44db080b481ce87e21, type: 3}
   m_PrefabInstance: {fileID: 1565602473}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1753481323
