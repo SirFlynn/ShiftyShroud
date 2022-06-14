@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -174,6 +175,52 @@ public class GameManager : MonoBehaviour
         {
             instructions.SetActive(false);
         }
+
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        int levelsComplete = PlayerPrefs.GetInt("LevelsComplete");
+
+        if (currentScene == 1)
+        {
+            //PlayerPrefs.SetInt("LevelsComplete", 1);
+
+            if (levelsComplete < 1)
+            {
+                PlayerPrefs.SetInt("LevelsComplete", 1);
+            }
+        }
+
+        if (currentScene == 2)
+        {
+            //PlayerPrefs.SetInt("LevelsComplete", 2);
+
+            if (levelsComplete < 2)
+            {
+                PlayerPrefs.SetInt("LevelsComplete", 2);
+            }
+        }
+
+        if (currentScene == 3)
+        {
+            //PlayerPrefs.SetInt("LevelsComplete", 3);
+
+            if (levelsComplete < 3)
+            {
+                PlayerPrefs.SetInt("LevelsComplete", 3);
+            }
+        }
+
+        if (currentScene == 4)
+        {
+            //PlayerPrefs.SetInt("LevelsComplete", 4);
+
+            if (levelsComplete < 4)
+            {
+                PlayerPrefs.SetInt("LevelsComplete", 4);
+            }
+        }
+
+        //PlayerPrefs.SetInt("LevelsComplete", PlayerPrefs.GetInt("LevelsComplete") + 1);
 
         winMenuFadeIn = true;
 
