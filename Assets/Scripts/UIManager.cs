@@ -10,13 +10,6 @@ public class UIManager : MonoBehaviour
     public Button level02Button, level03Button, level04Button, level05Button;
     int levelPassed;
 
-    void Start()
-    {
-    }
-
-    void Update()
-    {
-    }
     public void levelToLoad (int level)
     {
         SceneManager.LoadScene(level);
