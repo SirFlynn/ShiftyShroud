@@ -2854,6 +2854,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 583340707}
     - target: {fileID: 1908821991203454323, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908821991203454323, guid: 35664e68f5a11eb42bbde90d04ee460f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: Play
       objectReference: {fileID: 0}
